@@ -1,10 +1,15 @@
 package hw_9_1;
 
 public class Worker {
+    
+    Employee employee = new Employee();
 
-    public Worker(int baseSalary, int salary, String name) {
-        this.setBaseSalary(baseSalary);
-        this.setSalary(salary);
-        this.setName(name);
+    public Worker(int baseSalary, String name) {
+        employee.setBaseSalary(baseSalary);
+        employee.setName(name);
+    }
+    
+    public int getSalary() {
+        return employee.getBaseSalary();
     }
 }

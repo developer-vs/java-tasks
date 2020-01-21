@@ -22,7 +22,8 @@ public class Employee {
         this.name = name;
     }
 
-    public void setSalary(int salary) {
+    public void getSalary(int salary) {
         this.salary = salary;
     }
+    
 }

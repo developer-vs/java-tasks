@@ -1,12 +1,8 @@
 package hw_9_1;
 
 public class Manager {
-
-    /*
-        Необходимо создать класс Manager в который нужно добавить следующие методы:
-        getNumberOfSubordinates - получить количество подчиненных
-        setNumberOfSubordinates
-     */
+    
+    private Employee employee = new Employee();
 
     private int  numberOfSubordinates;
 
@@ -16,6 +12,13 @@ public class Manager {
 
     public void setNumberOfSubordinates(int numberOfSubordinates) {
         this.numberOfSubordinates = numberOfSubordinates;
+    }
+    
+    public int getSalary() {
+        if(numberOfSubordinates == 0) {
+            return employee.getBaseSalary();
+        }
+        return employee.getBaseSalary() * (numberOfSubordinates / 100 * 3);
     }
 
     /*

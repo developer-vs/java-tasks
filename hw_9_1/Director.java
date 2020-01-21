@@ -1,6 +1,6 @@
 package hw_9_1;
 
-public class Director extends Manager {
+public class Director {
 
     /*
         Необходимо создать класс Director с теми же методами, что и Manager,

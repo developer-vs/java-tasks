@@ -22,8 +22,7 @@ public class Employee {
         this.name = name;
     }
 
-    public void getSalary(int salary) {
-        this.salary = salary;
+    public int getSalary() {
+        return getBaseSalary() * 2;
     }
-    
 }

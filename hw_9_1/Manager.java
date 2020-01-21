@@ -1,10 +1,13 @@
 package hw_9_1;
 
-public class Manager {
-    
-    private Employee employee = new Employee();
+public class Manager extends Worker {
 
-    private int  numberOfSubordinates;
+    private int numberOfSubordinates;
+
+    public Manager(int baseSalary, String name, int numberOfSubordinates) {
+        super(baseSalary, name);
+        this.numberOfSubordinates = numberOfSubordinates;
+    }
 
     public int getNumberOfSubordinates() {
         return numberOfSubordinates;
@@ -13,18 +16,13 @@ public class Manager {
     public void setNumberOfSubordinates(int numberOfSubordinates) {
         this.numberOfSubordinates = numberOfSubordinates;
     }
-    
-    public int getSalary() {
-        if(numberOfSubordinates == 0) {
-            return employee.getBaseSalary();
+
+    @Override
+    public double getSalary() {
+
+        if(numberOfSubordinates > 0) {
+            return super.getSalary() * (double) (numberOfSubordinates / 100) * 3;
         }
-        return employee.getBaseSalary() * (numberOfSubordinates / 100 * 3);
+        return super.getSalary();
     }
-
-    /*
-        в классе, метод getSalary будет возвращать значение по формуле
-         - <базовая ставка> * (<количество подчиненных> / 100 * 3).
-         Если количество подчиненных 0, то результат как у обычного рабочего.
-     */
-
 }

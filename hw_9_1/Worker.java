@@ -1,15 +1,9 @@
 package hw_9_1;
 
-public class Worker {
+public class Worker extends Employee {
     
-    private Employee employee = new Employee();
-
-    public Worker(int baseSalary, String name) {
-        employee.setBaseSalary(baseSalary);
-        employee.setName(name);
-    }
-
+    @Override
     public double getSalary() {
-        return employee.getBaseSalary();
+        return getBaseSalary();
     }
 }

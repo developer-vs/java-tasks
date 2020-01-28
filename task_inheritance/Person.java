@@ -1,3 +1,5 @@
+package task_inheritance;
+
 public class Person {
     private String name;
 

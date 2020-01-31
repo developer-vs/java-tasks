@@ -1,11 +1,11 @@
-package one_dimensional_array;
+package arrays;
 
-public class SingleDimensionArray {
+public class OneDimensionalArray {
     // Create an empty Array
     // Time complexity: O(1)
     private int[] arr = null;
 
-    public SingleDimensionArray(int sizeOfArray) {
+    public OneDimensionalArray(int sizeOfArray) {
         // Space complexity O(n)
         arr = new int[sizeOfArray];
         for (int i = 0; i < arr.length; i++) {

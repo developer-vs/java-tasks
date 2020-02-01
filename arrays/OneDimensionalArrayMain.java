@@ -1,42 +1,46 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class OneDimensionalArrayMain {
 
     public static void main(String[] args) {
         System.out.println("Creating a blank array of size 10...");
-        OneDimensionalArray sda = new OneDimensionalArray(10);
+        OneDimensionalArray oda = new OneDimensionalArray(10);
 
         System.out.println("\nPrinting the array...");
-        sda.traverseArray();
+        oda.traverseArray();
 
         System.out.println("\nInserting few values in the array...");
-        sda.insert(0,0);
-        sda.insert(1,10);
-        sda.insert(2,20);
-        sda.insert(3,30);
-        sda.insert(4,40);
-        sda.insert(5,50);
-        sda.insert(6,60);
-        sda.insert(7,70);
-        sda.insert(8,80);
-        sda.insert(1,100);
-        sda.insert(12,120);
+        oda.insert(0,0);
+        oda.insert(1,10);
+        oda.insert(2,20);
+        oda.insert(3,30);
+        oda.insert(4,40);
+        oda.insert(5,50);
+        oda.insert(6,60);
+        oda.insert(7,70);
+        oda.insert(8,80);
+        oda.insert(1,100);
+        oda.insert(12,120);
+
+        oda.traverseArray();
 
         System.out.println("\nAccessing cell number #1 in the array...");
-        sda.accessingCell(1);
+        oda.accessingCell(1);
 
         System.out.println("\nSearching 30 in the array...");
-        sda.searchInAnArray(30);
+        oda.searchInAnArray(30);
 
         System.out.println("\nSearching 400 in the array...");
-        sda.searchInAnArray(400);
+        oda.searchInAnArray(400);
 
         System.out.println("\nDeleting value from cell #3 of the array...");
         System.out.println("Before deleting:");
-        sda.traverseArray();
-        sda.deleteValueFromArray(3);
+        oda.traverseArray();
+        oda.deleteValueFromArray(3);
         System.out.println("After deleting:");
-        sda.traverseArray();
+        oda.traverseArray();
 
 
     }

@@ -1,8 +1,8 @@
 package algo.reversearray;
 
-import algo.bubblesort.BubbleSort;
+import static algo.bubblesort.BubbleSort.bubbleSort;
 
-public class ReverseArray extends BubbleSort {
+public class ReverseArray {
 
     public static void main(String[] args) {
         int[] arr = {9, 6, 3, 7, 4, 19, 1};

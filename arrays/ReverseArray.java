@@ -1,4 +1,4 @@
-package algo.reversearray;
+package arrays;
 
 import algo.bubblesort.BubbleSort;
 

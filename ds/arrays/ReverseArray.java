@@ -1,4 +1,4 @@
-package arrays;
+package ds.arrays;
 
 import static algo.bubblesort.BubbleSort.bubbleSort;
 

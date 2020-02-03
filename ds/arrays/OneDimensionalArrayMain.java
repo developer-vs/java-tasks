@@ -1,6 +1,6 @@
-package arrays;
+package ds.arrays;
 
-import java.util.Arrays;
+import ds.arrays.OneDimensionalArray;
 
 public class OneDimensionalArrayMain {
 
